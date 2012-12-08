@@ -2,12 +2,12 @@
 
 Summary:	Modify and extend GNOME Shell functionality and behavior
 Name:		gnome-shell-extensions
-Version:	3.2.0
-Release:	2
+Version:	3.6.1
+Release:	1
 Group:		Graphical desktop/GNOME 
 License:	GPLv2+ 
 URL:		http://live.gnome.org/GnomeShell/Extensions
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-shell-extensions/%{url_ver}/%{name}-%{version}.tar.xz
+Source0:	%{name}-%{version}.tar.xz
 BuildArch:	noarch
 
 BuildRequires:	gnome-common
@@ -56,7 +56,7 @@ Enabled extensions:
 %package common
 Summary:	Files common to GNOME Shell Extensions
 Group:		Graphical desktop/GNOME 
-Requires:	gnome-shell >= 3.0.1
+Requires:	gnome-shell >= 3.6.0
 
 %description common
 GNOME Shell Extensions is a collection of extensions providing additional 
@@ -228,6 +228,7 @@ NOCONFIGURE=1 gnome-autogen.sh
 %files common -f %{name}.lang
 %doc README
 %dir %{_datadir}/gnome-shell/extensions/
+%dir %{_datadir}/glib-2.0/schemas
 
 %files alternate-tab
 %{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.alternate-tab.gschema.xml
@@ -235,6 +236,7 @@ NOCONFIGURE=1 gnome-autogen.sh
 
 %files alternative-status-menu
 %{_datadir}/gnome-shell/extensions/alternative-status-menu*
+%{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.alternative-status-menu.gschema.xml
 
 %files dock
 %{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.dock.gschema.xml
@@ -278,4 +280,19 @@ NOCONFIGURE=1 gnome-autogen.sh
 
 %files example
 %{_datadir}/gnome-shell/extensions/example*
+%{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.example.gschema.xml
+
+
+
+%changelog
+* Mon Dec  7 2012 Arkady L. Shane <ashejn@rosalab.ru. 3.6.1-1
+- update to 3.6.1
+
+* Sun May 06 2012 Matthew Dawkins <mattydaw@mandriva.org> 3.2.0-2
++ Revision: 796946
+- rebuild
+
+* Thu Mar 15 2012 Matthew Dawkins <mattydaw@mandriva.org> 3.2.0-1
++ Revision: 785071
+- imported package gnome-shell-extensions
 
