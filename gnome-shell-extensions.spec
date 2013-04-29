@@ -6,8 +6,8 @@ Version:	3.6.1
 Release:	1
 Group:		Graphical desktop/GNOME 
 License:	GPLv2+ 
-URL:		http://live.gnome.org/GnomeShell/Extensions
-Source0:	%{name}-%{version}.tar.xz
+Url:		http://live.gnome.org/GnomeShell/Extensions
+Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/gnome-shell-extensions/%{url_ver}/%{name}-%{version}.tar.xz
 BuildArch:	noarch
 
 BuildRequires:	gnome-common
@@ -281,18 +281,4 @@ NOCONFIGURE=1 gnome-autogen.sh
 %files example
 %{_datadir}/gnome-shell/extensions/example*
 %{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.example.gschema.xml
-
-
-
-%changelog
-* Mon Dec  7 2012 Arkady L. Shane <ashejn@rosalab.ru. 3.6.1-1
-- update to 3.6.1
-
-* Sun May 06 2012 Matthew Dawkins <mattydaw@mandriva.org> 3.2.0-2
-+ Revision: 796946
-- rebuild
-
-* Thu Mar 15 2012 Matthew Dawkins <mattydaw@mandriva.org> 3.2.0-1
-+ Revision: 785071
-- imported package gnome-shell-extensions
 
