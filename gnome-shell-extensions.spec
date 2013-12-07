@@ -3,7 +3,7 @@
 Summary:	Modify and extend GNOME Shell functionality and behavior
 Name:		gnome-shell-extensions
 Version:	3.6.1
-Release:	4
+Release:	5
 Group:		Graphical desktop/GNOME 
 License:	GPLv2+ 
 Url:		http://live.gnome.org/GnomeShell/Extensions
