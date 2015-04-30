@@ -2,10 +2,10 @@
 
 Summary:	Modify and extend GNOME Shell functionality and behavior
 Name:		gnome-shell-extensions
-Version:	3.14.1
+Version:	 3.17.1
 Release:	2
-Group:		Graphical desktop/GNOME 
-License:	GPLv2+ 
+Group:		Graphical desktop/GNOME
+License:	GPLv2+
 Url:		http://live.gnome.org/GnomeShell/Extensions
 Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/gnome-shell-extensions/%{url_ver}/%{name}-%{version}.tar.xz
 BuildArch:	noarch
@@ -18,19 +18,19 @@ BuildRequires:	pkgconfig(libgtop-2.0)
 
 Suggests:	%{name}-alternate-tab
 Suggests:	%{name}-apps-menu
-Suggests:	%{name}-auto-move-windows 
-Suggests:	%{name}-drive-menu  
+Suggests:	%{name}-auto-move-windows
+Suggests:	%{name}-drive-menu
 Suggests:	%{name}-gajim
 Suggests:	%{name}-launch-new-instance
 Suggests:	%{name}-native-window-placement
-Suggests:	%{name}-places-menu 
+Suggests:	%{name}-places-menu
 Suggests:	%{name}-systemMonitor
-Suggests:	%{name}-user-theme 
-Suggests:	%{name}-windowsNavigator 
+Suggests:	%{name}-user-theme
+Suggests:	%{name}-windowsNavigator
 Suggests:	%{name}-workspace-indicator
 
 %description
-GNOME Shell Extensions is a collection of extensions providing additional 
+GNOME Shell Extensions is a collection of extensions providing additional
 and optional functionality to GNOME Shell.
 
 Enabled extensions:
@@ -52,12 +52,12 @@ Enabled extensions:
 
 %package common
 Summary:	Files common to GNOME Shell Extensions
-Group:		Graphical desktop/GNOME 
+Group:		Graphical desktop/GNOME
 Requires:	gnome-shell >= 3.6.0
 
 %description common
-GNOME Shell Extensions is a collection of extensions providing additional 
-and optional functionality to GNOME Shell. Common files and directories 
+GNOME Shell Extensions is a collection of extensions providing additional
+and optional functionality to GNOME Shell. Common files and directories
 needed by extensions are provided here.
 
 %package -n gnome-classic-session
@@ -82,7 +82,7 @@ mode, which aims to provide a GNOME 2-like user interface.
 
 %package alternate-tab
 Summary:	Classic Alt+Tab behavior. Window based instead of app based
-Group:		Graphical desktop/GNOME 
+Group:		Graphical desktop/GNOME
 Requires:	%{name}-common = %{version}-%{release}
 
 %description alternate-tab
@@ -90,28 +90,28 @@ Lets you use classic Alt+Tab (window-based instead of app-based) in
 GNOME Shell.
 
 GNOME Shell groups multiple instances of the same application together.
-This extension disables grouping.  
+This extension disables grouping.
 
 %package windowsnavigator
 Summary:	Keyboard selection of windows and work-spaces in overlay mode
-Group:		Graphical desktop/GNOME 
+Group:		Graphical desktop/GNOME
 Requires:	%{name}-common = %{version}-%{release}
 
 %description windowsnavigator
-Allow keyboard selection of windows and work-spaces in overlay mode in 
+Allow keyboard selection of windows and work-spaces in overlay mode in
 GNOME Shell.
 
-Switch to overview mode (press the windows or alt+f1 key) and 
+Switch to overview mode (press the windows or alt+f1 key) and
 press the alt key to show numbers over windows.  Press any number to switch
 to the corresponding window.
 
 %package user-theme
 Summary:	Lets the user select a custom theme for the shell
-Group:		Graphical desktop/GNOME 
+Group:		Graphical desktop/GNOME
 Requires:	%{name}-common = %{version}-%{release}
 
 %description user-theme
-Lets the user select a custom theme for the Gnome shell. It will allow you to 
+Lets the user select a custom theme for the Gnome shell. It will allow you to
 apply a style from /.themes/[themeName]/gnome-shell/gnome-shell.css
 
 %package window-list
@@ -135,7 +135,7 @@ This GNOME Shell extension disables overrides workspace management.
 
 %package auto-move-windows
 Summary:	Assign specific workspaces to applications
-Group:		Graphical desktop/GNOME 
+Group:		Graphical desktop/GNOME
 Requires:	%{name}-common = %{version}-%{release}
 
 %description auto-move-windows
@@ -145,7 +145,7 @@ with a GSettings key.
 
 %package drive-menu
 Summary:	Disk device manager in the system status area
-Group:		Graphical desktop/GNOME 
+Group:		Graphical desktop/GNOME
 Requires:	%{name}-common = %{version}-%{release}
 
 %description drive-menu
@@ -158,12 +158,12 @@ Group:          Graphical desktop/GNOME
 Requires:       %{name}-common = %{version}-%{release}
 
 %description  launch-new-instance
-This GNOME Shell extension modifies the behavior of clicking 
+This GNOME Shell extension modifies the behavior of clicking
 the dash and app-launcher to always launch a new application instance.
 
 %package places-menu
 Summary:	Places menu indicator in the system status area
-Group:		Graphical desktop/GNOME 
+Group:		Graphical desktop/GNOME
 Requires:	%{name}-common = %{version}-%{release}
 
 %description places-menu
@@ -172,12 +172,12 @@ GNOME 2.x
 
 %package native-window-placement
 Summary:	Arrange windows in overview in a more native way
-Group:		Graphical desktop/GNOME 
+Group:		Graphical desktop/GNOME
 Requires:	%{name}-common = %{version}-%{release}
 
 %description native-window-placement
 This extension employs an algorithm (taken from KDE) for layouting the
-thumbnails in the overview that more closely reflects the positions and 
+thumbnails in the overview that more closely reflects the positions and
 relative sizes of the actual windows, instead of using a fixed grid.
 
 %package screenshot-window-sizer
@@ -192,7 +192,7 @@ screenshots.
 
 %package systemmonitor
 Summary:	Monitor your system status
-Group:		Graphical desktop/GNOME 
+Group:		Graphical desktop/GNOME
 Requires:	%{name}-common = %{version}-%{release}
 
 %description systemmonitor
