@@ -7,7 +7,7 @@ Release:	2
 Group:		Graphical desktop/GNOME
 License:	GPLv2+
 Url:		http://live.gnome.org/GnomeShell/Extensions
-Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/gnome-shell-extensions/%{url_ver}/%{name}-%{version}.tar.xz
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-shell-extensions/%{url_ver}/%{name}-%{version}.tar.xz
 BuildArch:	noarch
 
 BuildRequires:	gnome-common
@@ -190,14 +190,6 @@ Requires: %{name}-common = %{version}-%{release}
 This GNOME Shell extension allows to easily resize windows for GNOME Software
 screenshots.
 
-%package systemmonitor
-Summary:	Monitor your system status
-Group:		Graphical desktop/GNOME
-Requires:	%{name}-common = %{version}-%{release}
-
-%description systemmonitor
-Monitor your system status.
-
 %package apps-menu
 Summary:	Gnome 2.x style menu on the panel
 Group:		Graphical desktop/GNOME
@@ -275,11 +267,11 @@ EOF
 %files -n gnome-classic-session
 %config(noreplace) %{_sysconfdir}/X11/wmsession.d/*
 %{_bindir}/startgnome_classic
-%{_datadir}/applications/gnome-shell-classic.desktop
 %{_datadir}/gnome-session/sessions/gnome-classic.session
 %{_datadir}/gnome-shell/modes/classic.json
 %{_datadir}/gnome-shell/theme/*.svg
 %{_datadir}/gnome-shell/theme/gnome-classic.css
+%{_datadir}/gnome-shell/theme/gnome-classic-high-contrast.css
 
 %files alternate-tab
 %{_datadir}/gnome-shell/extensions/alternate-tab*
@@ -311,9 +303,6 @@ EOF
 %files native-window-placement
 %{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.native-window-placement.gschema.xml
 %{_datadir}/gnome-shell/extensions/native-window-placement*
-
-%files systemmonitor
-%{_datadir}/gnome-shell/extensions/systemMonitor*
 
 %files apps-menu
 %{_datadir}/gnome-shell/extensions/apps-menu*
