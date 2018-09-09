@@ -15,6 +15,8 @@ BuildRequires:	intltool
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gnome-desktop-3.0)
 BuildRequires:	pkgconfig(libgtop-2.0)
+BuildRequires:	meson
+BuildRequires:	sassc
 
 Suggests:	%{name}-alternate-tab
 Suggests:	%{name}-apps-menu
