@@ -2,8 +2,8 @@
 
 Summary:	Modify and extend GNOME Shell functionality and behavior
 Name:		gnome-shell-extensions
-Version:	 3.17.1
-Release:	4
+Version:	3.28.1
+Release:	1
 Group:		Graphical desktop/GNOME
 License:	GPLv2+
 Url:		http://live.gnome.org/GnomeShell/Extensions
@@ -15,6 +15,8 @@ BuildRequires:	intltool
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gnome-desktop-3.0)
 BuildRequires:	pkgconfig(libgtop-2.0)
+BuildRequires:	meson
+BuildRequires:	sassc
 
 Suggests:	%{name}-alternate-tab
 Suggests:	%{name}-apps-menu
@@ -218,14 +220,11 @@ A menu for changing workspace.
 %setup -q
 
 %build
-%configure  \
-	--disable-schemas-compile \
-	--enable-extensions="all"
-
-%make
+%meson -Dextension_set="all" -Dclassic_mode=true
+%meson_build
 
 %install
-%makeinstall_std
+%meson_install
 
 
 # helper script
@@ -260,7 +259,7 @@ EOF
 %files
 
 %files common -f %{name}.lang
-%doc README
+#doc README
 %dir %{_datadir}/gnome-shell/extensions/
 %dir %{_datadir}/glib-2.0/schemas
 
