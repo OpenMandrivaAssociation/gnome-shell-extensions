@@ -220,14 +220,11 @@ A menu for changing workspace.
 %setup -q
 
 %build
-%configure  \
-	--disable-schemas-compile \
-	--enable-extensions="all"
-
-%make
+%meson -Dextension_set="all" -Dclassic_mode=true
+%meson_build
 
 %install
-%makeinstall_std
+%meson_install
 
 
 # helper script
