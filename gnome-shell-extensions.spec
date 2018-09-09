@@ -259,7 +259,7 @@ EOF
 %files
 
 %files common -f %{name}.lang
-%doc README
+#doc README
 %dir %{_datadir}/gnome-shell/extensions/
 %dir %{_datadir}/glib-2.0/schemas
 
