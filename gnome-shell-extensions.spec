@@ -279,7 +279,7 @@ EOF
 %{_datadir}/gnome-shell/extensions/windowsNavigator*
 
 %files user-theme
-#{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.user-theme.gschema.xml
+%{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.user-theme.gschema.xml
 %{_datadir}/gnome-shell/extensions/user-theme*
 
 %files auto-move-windows
@@ -318,5 +318,5 @@ EOF
 %{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.window-list.gschema.xml
 
 %files overrides
-%{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.classic-overrides.gschema.xml
+#{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.classic-overrides.gschema.xml
 
