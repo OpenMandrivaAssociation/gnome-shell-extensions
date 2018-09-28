@@ -319,4 +319,6 @@ EOF
 
 %files overrides
 #{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.classic-overrides.gschema.xml
+%{_datadir}/glib-2.0/schemas/00_org.gnome.shell.extensions.classic.gschema.override
+
 
