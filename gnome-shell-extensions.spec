@@ -2,8 +2,8 @@
 
 Summary:	Modify and extend GNOME Shell functionality and behavior
 Name:		gnome-shell-extensions
-Version:	3.28.1
-Release:	2
+Version:	3.30.0
+Release:	1
 Group:		Graphical desktop/GNOME
 License:	GPLv2+
 Url:		http://live.gnome.org/GnomeShell/Extensions
@@ -318,5 +318,7 @@ EOF
 %{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.window-list.gschema.xml
 
 %files overrides
-%{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.classic-overrides.gschema.xml
+#{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.classic-overrides.gschema.xml
+%{_datadir}/glib-2.0/schemas/00_org.gnome.shell.extensions.classic.gschema.override
+
 
