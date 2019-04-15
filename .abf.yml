@@ -1,8 +1,2 @@
-removed_sources:
-  gnome-shell-extensions-3.14.1.tar.xz: fd95f7fe099cacd594dcf2e04a6df16327dddcc1
-  gnome-shell-extensions-3.6.1.tar.xz: 69ff2d26160a80faf3df8d2099e50194b24a5df3
-  gnome-shell-extensions-3.17.1.tar.xz: b824e2c331f6078b221871d55b7b3462d0e27326
 sources:
-  gnome-shell-extensions-3.28.1.tar.xz: 51b02a3157aa4c36af145b0c57b8132203954fc2
-  gnome-shell-extensions-3.30.0.tar.xz: dfd01cf661d42350e2f7ab2f5451e27a1b402c0f
-  gnome-shell-extensions-3.30.1.tar.xz: 66d08cfc7861f51de06a35d5a3b2ec12d3a6c50e
+  gnome-shell-extensions-3.32.0.tar.xz: 769986ec63efdf0c38fc536611168ceb429fb15d
