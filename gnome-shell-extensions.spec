@@ -12,11 +12,18 @@ BuildArch:	noarch
 
 BuildRequires:	gnome-common
 BuildRequires:	intltool
+BuildRequires:	desktop-file-utils
+BuildRequires:	gettext
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gnome-desktop-3.0)
 BuildRequires:	pkgconfig(libgtop-2.0)
+BuildRequires:	pkgconfig(gobject-introspection-1.0)
+BuildRequires:	gnome-shell
 BuildRequires:	meson
 BuildRequires:	sassc
+
+Requires:	gnome-shell
+Requires:	gnome-session
 
 Recommends:	%{name}-apps-menu
 Recommends:	%{name}-auto-move-windows
@@ -188,14 +195,6 @@ Requires:	%{name}-common = %{version}-%{release}
 %description apps-menu
 Lets you reach an application using gnome 2.x style menu on the panel.
 
-%package example
-Summary:	A minimal example illustrating how to write extensions
-Group:		Graphical desktop/GNOME
-Requires:	%{name}-common = %{version}-%{release}
-
-%description example
-A minimal example illustrating how to write extensions.
-
 %package workspace-indicator
 Summary:	A menu for changing workspace
 Group:		Graphical desktop/GNOME
@@ -293,10 +292,6 @@ EOF
 
 %files workspace-indicator
 %{_datadir}/gnome-shell/extensions/workspace-indicator*
-
-%files example
-%{_datadir}/gnome-shell/extensions/example*
-%{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.example.gschema.xml
 
 %files window-list
 %{_datadir}/gnome-shell/extensions/window-list*
