@@ -2,8 +2,8 @@
 
 Summary:	Modify and extend GNOME Shell functionality and behavior
 Name:		gnome-shell-extensions
-Version:	3.30.1
-Release:	2
+Version:	3.32.0
+Release:	1
 Group:		Graphical desktop/GNOME
 License:	GPLv2+
 Url:		http://live.gnome.org/GnomeShell/Extensions
@@ -12,24 +12,32 @@ BuildArch:	noarch
 
 BuildRequires:	gnome-common
 BuildRequires:	intltool
+BuildRequires:	desktop-file-utils
+BuildRequires:	gettext
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gnome-desktop-3.0)
 BuildRequires:	pkgconfig(libgtop-2.0)
+BuildRequires:	pkgconfig(gobject-introspection-1.0)
+BuildRequires:	gnome-shell
 BuildRequires:	meson
 BuildRequires:	sassc
 
-Suggests:	%{name}-alternate-tab
-Suggests:	%{name}-apps-menu
-Suggests:	%{name}-auto-move-windows
-Suggests:	%{name}-drive-menu
-Suggests:	%{name}-gajim
-Suggests:	%{name}-launch-new-instance
-Suggests:	%{name}-native-window-placement
-Suggests:	%{name}-places-menu
-Suggests:	%{name}-systemMonitor
-Suggests:	%{name}-user-theme
-Suggests:	%{name}-windowsNavigator
-Suggests:	%{name}-workspace-indicator
+Requires:	gnome-shell
+Requires:	gnome-session
+
+Recommends:	%{name}-apps-menu
+Recommends:	%{name}-auto-move-windows
+Recommends:	%{name}-drive-menu
+Recommends:	%{name}-gajim
+Recommends:	%{name}-launch-new-instance
+Recommends:	%{name}-native-window-placement
+Recommends:	%{name}-places-menu
+Recommends:	%{name}-systemMonitor
+Recommends:	%{name}-user-theme
+Recommends:	%{name}-windowsNavigator
+Recommends:	%{name}-workspace-indicator
+
+Obsoletes:      gnome-shell-extensions-alternate-tab
 
 %description
 GNOME Shell Extensions is a collection of extensions providing additional
@@ -65,7 +73,6 @@ needed by extensions are provided here.
 %package -n gnome-classic-session
 Summary:        GNOME "classic" mode session
 Group:          Graphical desktop/GNOME
-Requires:       %{name}-alternate-tab = %{version}-%{release}
 Requires:       %{name}-apps-menu = %{version}-%{release}
 Requires:       %{name}-launch-new-instance = %{version}-%{release}
 Requires:       %{name}-places-menu = %{version}-%{release}
@@ -81,18 +88,6 @@ Obsoletes:      gnome-panel < 3.8
 %description -n gnome-classic-session
 This package contains the required components for the GNOME Shell "classic"
 mode, which aims to provide a GNOME 2-like user interface.
-
-%package alternate-tab
-Summary:	Classic Alt+Tab behavior. Window based instead of app based
-Group:		Graphical desktop/GNOME
-Requires:	%{name}-common = %{version}-%{release}
-
-%description alternate-tab
-Lets you use classic Alt+Tab (window-based instead of app-based) in
-GNOME Shell.
-
-GNOME Shell groups multiple instances of the same application together.
-This extension disables grouping.
 
 %package windowsnavigator
 Summary:	Keyboard selection of windows and work-spaces in overlay mode
@@ -200,14 +195,6 @@ Requires:	%{name}-common = %{version}-%{release}
 %description apps-menu
 Lets you reach an application using gnome 2.x style menu on the panel.
 
-%package example
-Summary:	A minimal example illustrating how to write extensions
-Group:		Graphical desktop/GNOME
-Requires:	%{name}-common = %{version}-%{release}
-
-%description example
-A minimal example illustrating how to write extensions.
-
 %package workspace-indicator
 Summary:	A menu for changing workspace
 Group:		Graphical desktop/GNOME
@@ -272,9 +259,6 @@ EOF
 %{_datadir}/gnome-shell/theme/gnome-classic.css
 %{_datadir}/gnome-shell/theme/gnome-classic-high-contrast.css
 
-%files alternate-tab
-%{_datadir}/gnome-shell/extensions/alternate-tab*
-
 %files windowsnavigator
 %{_datadir}/gnome-shell/extensions/windowsNavigator*
 
@@ -308,10 +292,6 @@ EOF
 
 %files workspace-indicator
 %{_datadir}/gnome-shell/extensions/workspace-indicator*
-
-%files example
-%{_datadir}/gnome-shell/extensions/example*
-%{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.example.gschema.xml
 
 %files window-list
 %{_datadir}/gnome-shell/extensions/window-list*
