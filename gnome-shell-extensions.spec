@@ -29,6 +29,7 @@ Recommends:	%{name}-apps-menu
 Recommends:	%{name}-auto-move-windows
 Recommends:	%{name}-drive-menu
 Recommends:	%{name}-gajim
+Recommends: %{name}-horizontal-workspaces
 Recommends:	%{name}-launch-new-instance
 Recommends:	%{name}-native-window-placement
 Recommends:	%{name}-places-menu
@@ -203,6 +204,14 @@ Requires:	%{name}-common = %{version}-%{release}
 %description workspace-indicator
 A menu for changing workspace.
 
+%package horizontal-workspaces
+Summary:        Horizontal workspaces
+Group:          Graphical desktop/GNOME
+Requires:       %{name}-common = %{version}-%{release}
+
+%description horizontal-workspaces
+Use a horizontal workspace layout.
+
 %prep
 %setup -q
 
@@ -300,5 +309,8 @@ EOF
 %files overrides
 #{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.classic-overrides.gschema.xml
 %{_datadir}/glib-2.0/schemas/00_org.gnome.shell.extensions.classic.gschema.override
+
+%files horizontal-workspaces
+%{_datadir}/gnome-shell/extensions/horizontal-workspaces*
 
 
