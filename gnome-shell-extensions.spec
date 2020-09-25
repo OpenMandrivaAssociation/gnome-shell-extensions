@@ -262,7 +262,7 @@ EOF
 %files -n gnome-classic-session
 %config(noreplace) %{_sysconfdir}/X11/wmsession.d/*
 %{_bindir}/startgnome_classic
-%{_datadir}/gnome-session/sessions/gnome-classic.session
+#{_datadir}/gnome-session/sessions/gnome-classic.session
 %{_datadir}/gnome-shell/modes/classic.json
 %{_datadir}/gnome-shell/theme/*.svg
 %{_datadir}/gnome-shell/theme/gnome-classic.css
