@@ -3,7 +3,7 @@
 Summary:	Modify and extend GNOME Shell functionality and behavior
 Name:		gnome-shell-extensions
 Version:	40.0
-Release:	1
+Release:	2
 Group:		Graphical desktop/GNOME
 License:	GPLv2+
 Url:		http://live.gnome.org/GnomeShell/Extensions
@@ -38,6 +38,7 @@ Recommends:	%{name}-windowsNavigator
 Recommends:	%{name}-workspace-indicator
 
 Obsoletes:      gnome-shell-extensions-alternate-tab
+Obsoletes:      %{name}-horizontal-workspaces
 
 %description
 GNOME Shell Extensions is a collection of extensions providing additional
