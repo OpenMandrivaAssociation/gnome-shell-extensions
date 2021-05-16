@@ -2,8 +2,8 @@
 
 Summary:	Modify and extend GNOME Shell functionality and behavior
 Name:		gnome-shell-extensions
-Version:	40.0
-Release:	2
+Version:	40.1
+Release:	1
 Group:		Graphical desktop/GNOME
 License:	GPLv2+
 Url:		http://live.gnome.org/GnomeShell/Extensions
