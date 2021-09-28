@@ -250,6 +250,7 @@ EOF
 #doc README
 %dir %{_datadir}/gnome-shell/extensions/
 %dir %{_datadir}/glib-2.0/schemas
+%{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.apps-menu.gschema.xml
 
 %files -n gnome-classic-session
 %config(noreplace) %{_sysconfdir}/X11/wmsession.d/*
