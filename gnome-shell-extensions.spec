@@ -8,6 +8,8 @@ Group:		Graphical desktop/GNOME
 License:	GPLv2+
 Url:		http://live.gnome.org/GnomeShell/Extensions
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-shell-extensions/%{url_ver}/%{name}-%{version}.tar.xz
+# Upstream patch to fix build with meson 0.60+
+Patch0: https://gitlab.gnome.org/GNOME/gnome-shell-extensions/-/merge_requests/210.patch
 BuildArch:	noarch
 
 BuildRequires:	gnome-common
@@ -205,7 +207,7 @@ Requires:	%{name}-common = %{version}-%{release}
 A menu for changing workspace.
 
 %prep
-%setup -q
+%autopatch -p1
 
 %build
 %meson -Dextension_set="all" -Dclassic_mode=true
