@@ -4,7 +4,7 @@ diff -uraN gnome-shell-extensions-41.2/data/meson.build omv-gnome-shell-extensio
 @@ -1,5 +1,5 @@
  session_desktop = 'gnome-classic.desktop'
 -i18n.merge_file('',
-+i18n.merge_file('
++i18n.merge_file(
    input:  session_desktop + '.in',
    output: session_desktop,
    po_dir: '../po',
