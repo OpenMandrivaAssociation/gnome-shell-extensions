@@ -207,7 +207,7 @@ Requires:	%{name}-common = %{version}-%{release}
 A menu for changing workspace.
 
 %prep
-%autopatch -p1
+%autosetup -p1
 
 %build
 %meson -Dextension_set="all" -Dclassic_mode=true
