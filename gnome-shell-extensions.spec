@@ -260,6 +260,8 @@ EOF
 %{_datadir}/gnome-shell/theme/*.svg
 %{_datadir}/gnome-shell/theme/gnome-classic.css
 %{_datadir}/gnome-shell/theme/gnome-classic-high-contrast.css
+%{_datadir}/wayland-sessions/gnome-classic-wayland.desktop
+%{_datadir}/wayland-sessions/gnome-classic.desktop
 
 %files windowsnavigator
 %{_datadir}/gnome-shell/extensions/windowsNavigator*
