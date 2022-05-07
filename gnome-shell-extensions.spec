@@ -2,7 +2,7 @@
 
 Summary:	Modify and extend GNOME Shell functionality and behavior
 Name:		gnome-shell-extensions
-Version:	42.0
+Version:	42.1
 Release:	1
 Group:		Graphical desktop/GNOME
 License:	GPLv2+
