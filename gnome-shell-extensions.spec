@@ -249,6 +249,8 @@ EOF
 %files common -f %{name}.lang
 #doc README
 %dir %{_datadir}/gnome-shell/extensions/
+%{_datadir}/gnome-shell/extensions/light-style@gnome-shell-extensions.gcampax.github.com/extension.js
+%{_datadir}/gnome-shell/extensions/light-style@gnome-shell-extensions.gcampax.github.com/metadata.json
 %dir %{_datadir}/glib-2.0/schemas
 %{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.apps-menu.gschema.xml
 
