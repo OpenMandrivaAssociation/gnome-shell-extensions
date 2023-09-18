@@ -257,9 +257,9 @@ EOF
 %{_bindir}/startgnome_classic
 #{_datadir}/gnome-session/sessions/gnome-classic.session
 %{_datadir}/gnome-shell/modes/classic.json
-%{_datadir}/gnome-shell/theme/*.svg
-%{_datadir}/gnome-shell/theme/gnome-classic.css
-%{_datadir}/gnome-shell/theme/gnome-classic-high-contrast.css
+#{_datadir}/gnome-shell/theme/*.svg
+#{_datadir}/gnome-shell/theme/gnome-classic.css
+#{_datadir}/gnome-shell/theme/gnome-classic-high-contrast.css
 %{_datadir}/wayland-sessions/gnome-classic-wayland.desktop
 %{_datadir}/wayland-sessions/gnome-classic.desktop
 
