@@ -2,12 +2,12 @@
 
 Summary:	Modify and extend GNOME Shell functionality and behavior
 Name:		gnome-shell-extensions
-Version:	45.2
+Version:	46.0
 Release:	1
 Group:		Graphical desktop/GNOME
 License:	GPLv2+
-Url:		http://live.gnome.org/GnomeShell/Extensions
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-shell-extensions/%{url_ver}/%{name}-%{version}.tar.xz
+Url:		https://live.gnome.org/GnomeShell/Extensions
+Source0:	https://ftp.gnome.org/pub/GNOME/sources/gnome-shell-extensions/%{url_ver}/%{name}-%{version}.tar.xz
 BuildArch:	noarch
 
 BuildRequires:	gnome-common
