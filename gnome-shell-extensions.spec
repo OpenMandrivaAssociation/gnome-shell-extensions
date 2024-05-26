@@ -1,3 +1,4 @@
+%undefine _debugsource_packages
 %define url_ver %(echo %{version} | cut -d "." -f -2)
 
 Summary:	Modify and extend GNOME Shell functionality and behavior
