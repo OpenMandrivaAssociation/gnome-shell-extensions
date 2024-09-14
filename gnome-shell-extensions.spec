@@ -256,7 +256,7 @@ EOF
 %{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.apps-menu.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.system-monitor.gschema.xml
 %{_datadir}/gnome-shell/extensions/status-icons@gnome-shell-extensions.gcampax.github.com/extension.js
-%{_datadir}/gnome-shell/extensions/status-icons@gnome-shell-extensions.gcampax.github.com/metadata.js
+%{_datadir}/gnome-shell/extensions/status-icons@gnome-shell-extensions.gcampax.github.com/metadata.json
 
 %files -n gnome-classic-session
 %config(noreplace) %{_sysconfdir}/X11/wmsession.d/*
