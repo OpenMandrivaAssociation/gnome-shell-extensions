@@ -3,7 +3,7 @@
 
 Summary:	Modify and extend GNOME Shell functionality and behavior
 Name:		gnome-shell-extensions
-Version:	48.3
+Version:	49.rc
 Release:	1
 Group:		Graphical desktop/GNOME
 License:	GPLv2+
@@ -209,7 +209,7 @@ A menu for changing workspace.
 %autosetup -p1
 
 %build
-%meson -Dextension_set="all" -Dclassic_mode=true
+%meson -Dextension_set="all" -Dclassic_mode=true -Dx11=true
 %meson_build
 
 %install
