@@ -3,7 +3,7 @@
 
 Summary:	Modify and extend GNOME Shell functionality and behavior
 Name:		gnome-shell-extensions
-Version:	49.rc
+Version:	49.0
 Release:	1
 Group:		Graphical desktop/GNOME
 License:	GPLv2+
