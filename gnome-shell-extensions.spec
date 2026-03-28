@@ -259,7 +259,6 @@ EOF
 %{_datadir}/gnome-shell/extensions/status-icons@gnome-shell-extensions.gcampax.github.com/extension.js
 %{_datadir}/gnome-shell/extensions/status-icons@gnome-shell-extensions.gcampax.github.com/metadata.json
 
-
 %files -n gnome-classic-session
 %config(noreplace) %{_sysconfdir}/X11/wmsession.d/*
 %{_bindir}/startgnome_classic
@@ -270,6 +269,9 @@ EOF
 #{_datadir}/gnome-shell/theme/gnome-classic-high-contrast.css
 #_datadir}/wayland-sessions/gnome-classic-wayland.desktop
 %{_datadir}/wayland-sessions/gnome-classic.desktop
+%{_prefix}/lib/systemd/user/gnome-session@gnome-classic.target.d/gnome-classic.session.conf
+%{_datadir}/gnome-session/sessions/gnome-classic.session
+
 
 %files windowsnavigator
 %{_datadir}/gnome-shell/extensions/windowsNavigator*
